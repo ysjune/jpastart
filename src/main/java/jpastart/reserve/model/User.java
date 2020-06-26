@@ -30,4 +30,8 @@ public class User {
         this.createdDate = createdDate;
     }
 
+    public void changeName(String newName) {
+        this.name = newName;
+    }
+
 }
