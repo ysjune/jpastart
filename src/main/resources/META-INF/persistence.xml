@@ -8,8 +8,10 @@
 
     <persistence-unit name="jpastart" transaction-type="RESOURCE_LOCAL">
         <class>jpastart.reserve.model.User</class>
-        
-        <exclude-unlisted-classes>true</exclude-unlisted-classes>
+        <class>jpastart.reserve.model.Room</class>
+        <class>jpastart.reserve.model.Hotel</class>
+
+        <exclude-unlisted-classes>false</exclude-unlisted-classes>
         
         <properties>
             <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver" />
